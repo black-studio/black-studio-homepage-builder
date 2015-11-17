@@ -1,0 +1,4 @@
+.remove-content-padding .content,
+.remove-content-padding #content {
+	padding: 0;
+}
