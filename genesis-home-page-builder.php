@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Genesis Home Page Builder
-Plugin URI: http://wordpress.org/extend/plugins/genesis-home-page-builder/
-Description: Customize the home page of Genesis framework powered site using Page Builder.
+Plugin Name: Genesis Home Page Builder by Black Studio
+Plugin URI: https://wordpress.org/plugins/genesis-home-page-builder/
+Description: Customize the home page of Genesis framework child themes using Page Builder.
 Version: 1.0.0
 Author: Black Studio
 Author URI: http://www.blackstudio.it
