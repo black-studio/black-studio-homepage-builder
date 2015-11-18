@@ -1,3 +1,15 @@
+<?php
+
+/**
+ * Output inline styles for front page when needed
+ *
+ * @since      1.0.0
+ *
+ * @package    Genesis_Home_Page_Builder
+ * @subpackage Genesis_Home_Page_Builder/partials
+ */
+?>
+
 <style type="text/css">
 
 <?php 

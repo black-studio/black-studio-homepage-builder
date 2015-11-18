@@ -1,13 +1,48 @@
 <?php 
 
+/**
+ * The file that defines the core plugin class
+ *
+ * A class definition that includes attributes and functions used across both the
+ * public-facing side of the site and the dashboard.
+ *
+ * @since      1.0.0
+ *
+ * @package    Genesis_Home_Page_Builder
+ * @subpackage Genesis_Home_Page_Builder/includes
+ */
+
+/**
+ * The core plugin class.
+ *
+ * This is used to define internationalization, dashboard-specific hooks, and
+ * public-facing site hooks.
+ *
+ * Also maintains the unique identifier of this plugin as well as the current
+ * version of the plugin.
+ *
+ * @since      1.0.0
+ * @package    Genesis_Home_Page_Builder
+ * @subpackage Genesis_Home_Page_Builder/includes
+ */
+ 
 class Genesis_Home_Page_Builder {
 
+	/**
+	 * Define the core functionality of the plugin.
+	 *
+	 * Set the plugin name and the plugin version that can be used throughout the plugin.
+	 * Load the dependencies, define the locale, and set the hooks for the Dashboard and
+	 * the public-facing side of the site.
+	 *
+	 * @since    1.0.0
+	 */
 	public function __construct() {
 		if( is_admin() ) {
 			add_action( 'admin_init', array( $this, 'save_options' ) );
 			add_action( 'after_setup_theme', array( $this, 'add_page_builder_support' ) );
 			add_action( 'load-appearance_page_so_panels_home_page', array( $this, 'add_meta_boxes' ) );
-			add_action( 'admin_footer-appearance_page_so_panels_home_page', array( $this, 'footer' ) );
+			add_action( 'admin_footer-appearance_page_so_panels_home_page', array( $this, 'admin_footer' ) );
 		}
 		else {
 			add_filter( 'genesis_pre_get_option_site_layout', array( $this, 'force_layout' ), 50 );
@@ -16,7 +51,11 @@ class Genesis_Home_Page_Builder {
 		}
 	}
 	
-	// Activation checks
+	/**
+	 * Perform activation checks
+	 *
+	 * @since    1.0.0
+	 */
 	static public function activation_hook() {
 		// Check for Genesis presence
 		if ( 'genesis' != basename( TEMPLATEPATH ) ) {
@@ -30,7 +69,11 @@ class Genesis_Home_Page_Builder {
 		}
 	}
 	
-	// Add Page Builder support to theme
+	/**
+	 * Add Page Builder support to theme
+	 *
+	 * @since    1.0.0
+	 */
 	public function add_page_builder_support() {
 		add_theme_support( 'siteorigin-panels', array(
 			'home-page' => true,
@@ -41,8 +84,12 @@ class Genesis_Home_Page_Builder {
 		) );
 	}
 	
-	// Add meta box options 
-	public function add_meta_boxes( $post_type, $post = null ) {
+	/**
+	 * Add meta box for options
+	 *
+	 * @since    1.0.0
+	 */
+	public function add_meta_boxes() {
 		add_meta_box(
 			'genesis-home-page-builder-settings', 
 			__( 'Genesis styles adjustments', 'genesis-home-page-builder' ),
@@ -53,18 +100,31 @@ class Genesis_Home_Page_Builder {
 		);
 	}
 	
-	// Display meta box in footer
-	public function footer() {
+	/**
+	 * Display meta box in footer
+	 *
+	 * @since    1.0.0
+	 */
+	public function admin_footer() {
 		include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/admin-footer.php';
 	}
 
-	// Render meta box options 
+	/**
+	 * Render meta box options
+	 *
+	 * @since    1.0.0
+	 * @param    WP_Post|null    $post The object for the current post/page.
+	 */
 	public function render_meta_box( $post = null ) {
 		$settings = get_option( 'genesis-home-page-builder-settings', 0 );
 		include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/admin-settings.php';
 	}
 	
-	// Function save options
+	/**
+	 * Save plugin options
+	 *
+	 * @since    1.0.0
+	 */
 	public function save_options() {
 		if( ! isset( $_POST['_sopanels_home_nonce'] ) || ! wp_verify_nonce( $_POST['_sopanels_home_nonce'], 'save' ) ) return;
 		if ( isset( $_POST['genesis-home-page-builder-settings'] ) ) {
@@ -73,7 +133,11 @@ class Genesis_Home_Page_Builder {
 		}
 	}
 	
-	// Include frontend styles
+	/**
+	 * Include frontend styles
+	 *
+	 * @since    1.0.0
+	 */
 	public function style() {
 		if ( is_front_page() ) {
 			$settings = get_option( 'genesis-home-page-builder-settings', 0 );
@@ -83,7 +147,13 @@ class Genesis_Home_Page_Builder {
 		}
 	}
 
-	// Force fullwidth layout
+	/**
+	 * Force fullwidth layout
+	 *
+	 * @since    1.0.0
+	 * @param    string    $layout
+	 * @return   string
+	 */
 	public function force_layout( $layout ) {
 		if ( is_front_page() ) {
 			$layout = 'full-width-content';
@@ -91,7 +161,11 @@ class Genesis_Home_Page_Builder {
 		return $layout;
 	}
 	
-	// Setup custom loog in home page
+	/**
+	 * Setup custom loog in home page
+	 *
+	 * @since    1.0.0
+	 */
 	public function setup_loop() {
 		if ( is_front_page() ) {
 			remove_action( 'genesis_loop', 'genesis_do_loop' );
@@ -99,7 +173,11 @@ class Genesis_Home_Page_Builder {
 		}
 	}
 
-	// Render home page
+	/**
+	 * Render home page
+	 *
+	 * @since    1.0.0
+	 */
 	public function loop() {
 		if( function_exists( 'siteorigin_panels_render' ) ) {
 			echo siteorigin_panels_render( 'home' ); 
@@ -109,4 +187,3 @@ class Genesis_Home_Page_Builder {
 	}
 	
 }
-
