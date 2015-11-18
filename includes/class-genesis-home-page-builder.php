@@ -65,14 +65,15 @@ class Genesis_Home_Page_Builder {
 			add_action( 'after_setup_theme', array( $this, 'add_page_builder_support' ) );
 			add_action( 'load-appearance_page_so_panels_home_page', array( $this, 'add_meta_boxes' ) );
 			add_action( 'admin_footer-appearance_page_so_panels_home_page', array( $this, 'admin_footer' ) );
+			add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
 		}
 		else {
 			add_filter( 'genesis_pre_get_option_site_layout', array( $this, 'force_layout' ), 50 );
-			add_action( 'genesis_before', array( $this, 'setup_loop' ) );
-			add_action( 'wp_head', array( $this, 'style' ), 100 );
+			add_action( 'genesis_before', array( $this, 'replace_loop' ) );
+			add_action( 'wp_head', array( $this, 'public_style' ), 100 );
 		}
 	}
-	
+
 	/**
 	 * Perform activation checks
 	 *
@@ -90,7 +91,20 @@ class Genesis_Home_Page_Builder {
 			exit( sprintf( __( 'Sorry, to activate the Genesis Home Page Builder plugin you should have installed the <a target="_blank" href="%s">Page Builder by SiteOrigin</a> plugin', 'genesis-home-page-builder' ), 'http://wordpress.org/plugins/siteorigin-panels/' ) );
 		}
 	}
-	
+
+	/**
+	 * Load the plugin text domain for translation.
+	 *
+	 * @since    1.0.0
+	 */
+	public function load_plugin_textdomain() {
+		load_plugin_textdomain(
+			$this->plugin_name,
+			false,
+			dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+		);
+	}
+
 	/**
 	 * Add Page Builder support to theme
 	 *
@@ -105,7 +119,7 @@ class Genesis_Home_Page_Builder {
 			'responsive' => true,
 		) );
 	}
-	
+
 	/**
 	 * Add meta box for options
 	 *
@@ -121,7 +135,7 @@ class Genesis_Home_Page_Builder {
 			'high'
 		);
 	}
-	
+
 	/**
 	 * Display meta box in footer
 	 *
@@ -141,7 +155,7 @@ class Genesis_Home_Page_Builder {
 		$settings = get_option( 'genesis-home-page-builder-settings', 0 );
 		include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/admin-settings.php';
 	}
-	
+
 	/**
 	 * Save plugin options
 	 *
@@ -154,13 +168,13 @@ class Genesis_Home_Page_Builder {
 			update_option( 'genesis-home-page-builder-settings', $new_settings );
 		}
 	}
-	
+
 	/**
 	 * Include frontend styles
 	 *
 	 * @since    1.0.0
 	 */
-	public function style() {
+	public function public_style() {
 		if ( is_front_page() ) {
 			$settings = get_option( 'genesis-home-page-builder-settings', 0 );
 			if( ! empty( $settings['reset-content-padding'] ) || ! empty( $settings['reset-overflow-hidden'] ) ) {
@@ -187,16 +201,16 @@ class Genesis_Home_Page_Builder {
 		}
 		return $layout;
 	}
-	
+
 	/**
-	 * Setup custom loog in home page
+	 * Replace native loop with a custom loop for front page
 	 *
 	 * @since    1.0.0
 	 */
-	public function setup_loop() {
+	public function replace_loop() {
 		if ( is_front_page() ) {
 			remove_action( 'genesis_loop', 'genesis_do_loop' );
-			add_action( 'genesis_loop', array( $this, 'loop' ) );
+			add_action( 'genesis_loop', array( $this, 'render_home' ) );
 		}
 	}
 
@@ -205,12 +219,12 @@ class Genesis_Home_Page_Builder {
 	 *
 	 * @since    1.0.0
 	 */
-	public function loop() {
+	public function render_home() {
 		if( function_exists( 'siteorigin_panels_render' ) ) {
 			echo siteorigin_panels_render( 'home' ); 
 		} else {
 			genesis_do_loop();
 		}
 	}
-	
+
 }
