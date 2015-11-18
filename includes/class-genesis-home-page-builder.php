@@ -29,6 +29,24 @@
 class Genesis_Home_Page_Builder {
 
 	/**
+	 * The unique identifier of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 */
+	protected $plugin_name;
+
+	/**
+	 * The current version of the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $version    The current version of the plugin.
+	 */
+	protected $version;
+
+	/**
 	 * Define the core functionality of the plugin.
 	 *
 	 * Set the plugin name and the plugin version that can be used throughout the plugin.
@@ -38,6 +56,10 @@ class Genesis_Home_Page_Builder {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
+
+		$this->plugin_name = 'genesis-home-page-builder';
+		$this->version = '1.0.0';
+		
 		if( is_admin() ) {
 			add_action( 'admin_init', array( $this, 'save_options' ) );
 			add_action( 'after_setup_theme', array( $this, 'add_page_builder_support' ) );
