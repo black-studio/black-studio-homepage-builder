@@ -142,7 +142,12 @@ class Genesis_Home_Page_Builder {
 		if ( is_front_page() ) {
 			$settings = get_option( 'genesis-home-page-builder-settings', 0 );
 			if( ! empty( $settings['reset-content-padding'] ) || ! empty( $settings['reset-overflow-hidden'] ) ) {
-				include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/public-style.php';
+				if ( ! current_theme_supports( 'html5' ) ) {
+					include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/public-style-xhtml.php';
+				}
+				else {
+					include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/public-style-html5.php';
+				}
 			}
 		}
 	}
