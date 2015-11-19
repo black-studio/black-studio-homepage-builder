@@ -12,7 +12,7 @@
 
 <style type="text/css">
 
-<?php if( ! empty( $settings['reset-overflow-hidden'] ) ) { ?>
+<?php if ( ! empty( $settings['reset-overflow-hidden'] ) ) { ?>
 .home .site-container,
 .home .site-inner,
 .home .site-inner .wrap,
@@ -22,7 +22,7 @@
 }
 <?php } ?>
 
-<?php if( ! empty( $settings['reset-content-padding'] ) ) { ?>	
+<?php if ( ! empty( $settings['reset-content-padding'] ) ) { ?>	
 .home .content {
 	padding: 0;
 }

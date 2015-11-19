@@ -25,7 +25,7 @@
  * @package    Genesis_Home_Page_Builder
  * @subpackage Genesis_Home_Page_Builder/includes
  */
- 
+
 class Genesis_Home_Page_Builder {
 
 	/**
@@ -60,7 +60,7 @@ class Genesis_Home_Page_Builder {
 		$this->plugin_name = 'genesis-home-page-builder';
 		$this->version = '1.0.0';
 		
-		if( is_admin() ) {
+		if ( is_admin() ) {
 			add_action( 'admin_init', array( $this, 'save_options' ) );
 			add_action( 'after_setup_theme', array( $this, 'add_page_builder_support' ) );
 			add_action( 'load-appearance_page_so_panels_home_page', array( $this, 'add_meta_boxes' ) );
@@ -162,7 +162,9 @@ class Genesis_Home_Page_Builder {
 	 * @since    1.0.0
 	 */
 	public function save_options() {
-		if( ! isset( $_POST['_sopanels_home_nonce'] ) || ! wp_verify_nonce( $_POST['_sopanels_home_nonce'], 'save' ) ) return;
+		if ( ! isset( $_POST['_sopanels_home_nonce'] ) || ! wp_verify_nonce( $_POST['_sopanels_home_nonce'], 'save' ) ) {
+			return;
+		}
 		if ( isset( $_POST['genesis-home-page-builder-settings'] ) ) {
 			$new_settings = array_map( 'absint', $_POST['genesis-home-page-builder-settings'] );
 			update_option( 'genesis-home-page-builder-settings', $new_settings );
@@ -177,7 +179,7 @@ class Genesis_Home_Page_Builder {
 	public function public_style() {
 		if ( is_front_page() ) {
 			$settings = get_option( 'genesis-home-page-builder-settings', 0 );
-			if( ! empty( $settings['reset-content-padding'] ) || ! empty( $settings['reset-overflow-hidden'] ) ) {
+			if ( ! empty( $settings['reset-content-padding'] ) || ! empty( $settings['reset-overflow-hidden'] ) ) {
 				if ( ! current_theme_supports( 'html5' ) ) {
 					include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/public-style-xhtml.php';
 				}
@@ -220,7 +222,7 @@ class Genesis_Home_Page_Builder {
 	 * @since    1.0.0
 	 */
 	public function render_home() {
-		if( function_exists( 'siteorigin_panels_render' ) ) {
+		if ( function_exists( 'siteorigin_panels_render' ) ) {
 			echo siteorigin_panels_render( 'home' ); 
 		} else {
 			genesis_do_loop();
