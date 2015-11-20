@@ -5,8 +5,8 @@
  *
  * @since      1.0.0
  *
- * @package    Genesis_Home_Page_Builder
- * @subpackage Genesis_Home_Page_Builder/partials
+ * @package    Black_Studio_Homepage_Builder
+ * @subpackage Black_Studio_Homepage_Builder/partials
  */
 ?>
 

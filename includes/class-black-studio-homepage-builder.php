@@ -8,8 +8,8 @@
  *
  * @since      1.0.0
  *
- * @package    Genesis_Home_Page_Builder
- * @subpackage Genesis_Home_Page_Builder/includes
+ * @package    Black_Studio_Homepage_Builder
+ * @subpackage Black_Studio_Homepage_Builder/includes
  */
 
 /**
@@ -22,11 +22,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Genesis_Home_Page_Builder
- * @subpackage Genesis_Home_Page_Builder/includes
+ * @package    Black_Studio_Homepage_Builder
+ * @subpackage Black_Studio_Homepage_Builder/includes
  */
 
-class Genesis_Home_Page_Builder {
+class Black_Studio_Homepage_Builder {
 
 	/**
 	 * The unique identifier of this plugin.
@@ -57,7 +57,7 @@ class Genesis_Home_Page_Builder {
 	 */
 	public function __construct() {
 
-		$this->plugin_name = 'genesis-home-page-builder';
+		$this->plugin_name = 'black-studio-homepage-builder';
 		$this->version = '1.0.0';
 		
 		if ( is_admin() ) {
@@ -83,12 +83,12 @@ class Genesis_Home_Page_Builder {
 		// Check for Genesis presence
 		if ( 'genesis' != basename( TEMPLATEPATH ) ) {
 			deactivate_plugins( plugin_basename( __FILE__ ) ); 
-			exit( sprintf( __( 'Sorry, to activate the Genesis Home Page Builder plugin you should have installed a <a target="_blank" href="%s">Genesis</a> theme', 'genesis-home-page-builder' ), 'http://www.studiopress.com/themes/genesis' ) );
+			exit( sprintf( __( 'Sorry, to activate the Black Studio Homepage Builder plugin you should have installed a <a target="_blank" href="%s">Genesis</a> theme', 'black-studio-homepage-builder' ), 'http://www.studiopress.com/themes/genesis' ) );
 		}
 		// Check for Page Builder presence
 		if ( ! defined( 'SITEORIGIN_PANELS_VERSION' ) ) {
 			deactivate_plugins( plugin_basename( __FILE__ ) ); 
-			exit( sprintf( __( 'Sorry, to activate the Genesis Home Page Builder plugin you should have installed the <a target="_blank" href="%s">Page Builder by SiteOrigin</a> plugin', 'genesis-home-page-builder' ), 'http://wordpress.org/plugins/siteorigin-panels/' ) );
+			exit( sprintf( __( 'Sorry, to activate the Black Studio Homepage Builder plugin you should have installed the <a target="_blank" href="%s">Page Builder by SiteOrigin</a> plugin', 'black-studio-homepage-builder' ), 'http://wordpress.org/plugins/siteorigin-panels/' ) );
 		}
 	}
 
@@ -127,8 +127,8 @@ class Genesis_Home_Page_Builder {
 	 */
 	public function add_meta_boxes() {
 		add_meta_box(
-			'genesis-home-page-builder-settings', 
-			__( 'Genesis styles adjustments', 'genesis-home-page-builder' ),
+			'black-studio-homepage-builder-settings', 
+			__( 'Genesis styles adjustments', 'black-studio-homepage-builder' ),
 			array( $this, 'render_meta_box' ),
 			'appearance_page_so_panels_home_page',
 			'advanced', 
@@ -152,7 +152,7 @@ class Genesis_Home_Page_Builder {
 	 * @param    WP_Post|null    $post The object for the current post/page.
 	 */
 	public function render_meta_box( $post = null ) {
-		$settings = get_option( 'genesis-home-page-builder-settings', 0 );
+		$settings = get_option( 'black-studio-homepage-builder-settings', 0 );
 		include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/admin-settings.php';
 	}
 
@@ -165,9 +165,9 @@ class Genesis_Home_Page_Builder {
 		if ( ! isset( $_POST['_sopanels_home_nonce'] ) || ! wp_verify_nonce( $_POST['_sopanels_home_nonce'], 'save' ) ) {
 			return;
 		}
-		if ( isset( $_POST['genesis-home-page-builder-settings'] ) ) {
-			$new_settings = array_map( 'absint', $_POST['genesis-home-page-builder-settings'] );
-			update_option( 'genesis-home-page-builder-settings', $new_settings );
+		if ( isset( $_POST['black-studio-homepage-builder-settings'] ) ) {
+			$new_settings = array_map( 'absint', $_POST['black-studio-homepage-builder-settings'] );
+			update_option( 'black-studio-homepage-builder-settings', $new_settings );
 		}
 	}
 
@@ -178,7 +178,7 @@ class Genesis_Home_Page_Builder {
 	 */
 	public function public_style() {
 		if ( is_front_page() ) {
-			$settings = get_option( 'genesis-home-page-builder-settings', 0 );
+			$settings = get_option( 'black-studio-homepage-builder-settings', 0 );
 			if ( ! empty( $settings['reset-content-padding'] ) || ! empty( $settings['reset-overflow-hidden'] ) ) {
 				if ( ! current_theme_supports( 'html5' ) ) {
 					include plugin_dir_path( dirname( __FILE__ ) ) . 'partials/public-style-xhtml.php';

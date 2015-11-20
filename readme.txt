@@ -1,6 +1,6 @@
-=== Genesis Home Page Builder by Black Studio ===
+=== Black Studio Homepage Builder for Genesis ===
 Contributors: black-studio, marcochiesi, thedarkmist
-Donate link: https://wordpress.org/plugins/genesis-home-page-builder/
+Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/ 
 Tags: genesis, home, homepage, home page, front page, front page, siteorigin, page builder, responsive
 Requires at least: 4.0
 Tested up to: 4.4
@@ -40,21 +40,21 @@ In particular this plugin does the following:
 = Links =
 
 * [Black Studio web site](http://www.blackstudio.it/en/)
-* [FAQ](https://wordpress.org/plugins/genesis-home-page-builder/faq/)
-* [Support forum](https://wordpress.org/support/plugin/genesis-home-page-builder)
+* [FAQ](https://wordpress.org/plugins/black-studio-homepage-builder/faq/)
+* [Support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder)
 * Follow us on [Twitter](https://twitter.com/blackstudioita), [Facebook](https://www.facebook.com/blackstudiocomunicazione), [LinkedIn](https://www.linkedin.com/company/black-studio) and [GitHub](https://github.com/black-studio)
 
 = Get involved =
 
-* Developers can contribute to the source code on our [GitHub repository](https://github.com/black-studio/genesis-home-page-builder).
-* Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/genesis-home-page-builder#postform) or making a [donation](http://www.blackstudio.it/en/wordpress-plugins/genesis-home-page-builder/).
+* Developers can contribute to the source code on our [GitHub repository](https://github.com/black-studio/black-studio-homepage-builder).
+* Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/black-studio-homepage-builder#postform) or making a [donation](http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/).
 
 == Installation ==
 
 This section describes how to install and use the plugin.
 
 1. Before installing the plugin please ensure that you are using a Genesis child theme and that you activated the Page Builder plugin.
-2. You may install the plugin directly from your WordPress dasboard. Go to `Plugins` => `Add New` and search for `Genesis Home Page Builder`. Alternatively you may download the ZIP package and upload it using the `Upload Plugin` button in the same screen. You may also upload the files using FTP, just ensure that the entire `genesis-home-page-builder` folder is copied into the `/wp-content/plugins/` directory).
+2. You may install the plugin directly from your WordPress dasboard. Go to `Plugins` => `Add New` and search for `Black Studio Homepage Builder`. Alternatively you may download the ZIP package and upload it using the `Upload Plugin` button in the same screen. You may also upload the files using FTP, just ensure that the entire `black-studio-homepage-builder` folder is copied into the `/wp-content/plugins/` directory).
 3. Activate the plugin.
 4. In order to use the plugin, go to `Appearance` => `Home Page` in your WordPress dashboard.
 5. Switch on the Custom Home Page and start to build your new home page, either from scratch or from one of the prebuilt layouts available in Page Builder. For further information about the usage, please refer to [Page Builder](https://wordpress.org/plugins/siteorigin-panels/) documentation.
@@ -68,7 +68,7 @@ This section describes how to install and use the plugin.
 
 == Frequently Asked Questions ==
 
-No FAQ at this time. Please post your questions and issues to our [support forum](https://wordpress.org/support/plugin/genesis-home-page-builder).
+No FAQ at this time. Please post your questions and issues to our [support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder).
 
 == Changelog ==
 
