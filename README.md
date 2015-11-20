@@ -1,16 +1,16 @@
-=== Black Studio Homepage Builder for Genesis ===
-Contributors: black-studio, marcochiesi, thedarkmist
-Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/ 
-Tags: genesis, home, homepage, home page, front page, front page, siteorigin, page builder, responsive
-Requires at least: 4.0
-Tested up to: 4.4
-Stable tag: 1.0.0
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+# Black Studio Homepage Builder for Genesis #
+**Contributors:** black-studio, marcochiesi, thedarkmist  
+**Donate link:** http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/   
+**Tags:** genesis, home, homepage, home page, front page, front page, siteorigin, page builder, responsive  
+**Requires at least:** 4.0  
+**Tested up to:** 4.4  
+**Stable tag:** 1.0.0  
+**License:** GPLv3  
+**License URI:** http://www.gnu.org/licenses/gpl-3.0.txt  
 
 Customize the home page of Genesis framework child themes using Page Builder.
 
-== Description ==
+## Description ##
 
 The Genesis framework by StudioPress is probably the best WordPress theme framework on the market. Unfortunately most of the available child themes have a prebuilt layout for the home page, that can't be easily customized, unless you are a developer, as it requires dealing with templates, hooks, etc.
 On the other side the Page Builder plugin by SiteOrigin allows you to create responsive page layouts using widgets with simple drag and drop operations.
@@ -26,30 +26,30 @@ In particular this plugin does the following:
 * Allows you to control some CSS variations to adjust layout in specific use cases
 * Supports both Genesis XHTML and HTML5 child themes
 
-= Requirements =
+### Requirements ###
 
 * A child theme based on the [Genesis framework by StudioPress](http://www.studiopress.com/)
 * [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/) plugin
 
-= Recommended additional plugins to use with this one =
+### Recommended additional plugins to use with this one ###
 
 * [Black Studio TinyMCE Widget](https://wordpress.org/plugins/black-studio-tinymce-widget/)
 * [SiteOrigin Widgets Bundle](https://wordpress.org/plugins/so-widgets-bundle/)
 * [Genesis Sandbox Featured Content Widget](https://wordpress.org/plugins/genesis-featured-content-widget/)
 
-= Links =
+### Links ###
 
 * [Black Studio web site](http://www.blackstudio.it/en/)
 * [FAQ](https://wordpress.org/plugins/black-studio-homepage-builder/faq/)
 * [Support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder)
 * Follow us on [Twitter](https://twitter.com/blackstudioita), [Facebook](https://www.facebook.com/blackstudiocomunicazione), [LinkedIn](https://www.linkedin.com/company/black-studio) and [GitHub](https://github.com/black-studio)
 
-= Get involved =
+### Get involved ###
 
 * Developers can contribute to the source code on our [GitHub repository](https://github.com/black-studio/black-studio-homepage-builder).
 * Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/black-studio-homepage-builder#postform) or making a [donation](http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/).
 
-== Installation ==
+## Installation ##
 
 This section describes how to install and use the plugin.
 
@@ -60,17 +60,23 @@ This section describes how to install and use the plugin.
 5. Switch on the Custom Home Page and start to build your new home page, either from scratch or from one of the prebuilt layouts available in Page Builder. For further information about the usage, please refer to [Page Builder](https://wordpress.org/plugins/siteorigin-panels/) documentation.
 6. If necessary adjust a few styling options at the bottom of the same screen.
 
-== Screenshots ==
+## Screenshots ##
 
-1. Admin screen for Custom Home Page
-2. Front page sample made with Magazine child theme (XHTML) and a prebuilt layout by Page builder
-3. Front page sample made with Centric child theme (HTML5) and a prebuilt layout by Page builder
+### 1. Admin screen for Custom Home Page ###
+![Admin screen for Custom Home Page](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder-for-genesis/develop/assets/screenshot-1.png)
 
-== Frequently Asked Questions ==
+### 2. Front page sample made with Magazine child theme (XHTML) and a prebuilt layout by Page builder ###
+![Front page sample made with Magazine child theme (XHTML) and a prebuilt layout by Page builder](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder-for-genesis/develop/assets/screenshot-2.png)
+
+### 3. Front page sample made with Centric child theme (HTML5) and a prebuilt layout by Page builder ###
+![Front page sample made with Centric child theme (HTML5) and a prebuilt layout by Page builder](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder-for-genesis/develop/assets/screenshot-3.png)
+
+
+## Frequently Asked Questions ##
 
 No FAQ at this time. Please post your questions and issues to our [support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder).
 
-== Changelog ==
+## Changelog ##
 
-= 1.0.0 (2015-11-21) =
+### 1.0.0 (2015-11-21) ###
 * First release
