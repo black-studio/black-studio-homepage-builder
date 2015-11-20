@@ -63,13 +63,13 @@ This section describes how to install and use the plugin.
 ## Screenshots ##
 
 ### 1. Admin screen for Custom Home Page ###
-![Admin screen for Custom Home Page](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder-for-genesis/develop/assets/screenshot-1.png)
+![Admin screen for Custom Home Page](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder/develop/assets/screenshot-1.png)
 
 ### 2. Front page sample made with Magazine child theme (XHTML) and a prebuilt layout by Page builder ###
-![Front page sample made with Magazine child theme (XHTML) and a prebuilt layout by Page builder](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder-for-genesis/develop/assets/screenshot-2.png)
+![Front page sample made with Magazine child theme (XHTML) and a prebuilt layout by Page builder](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder/develop/assets/screenshot-2.png)
 
 ### 3. Front page sample made with Centric child theme (HTML5) and a prebuilt layout by Page builder ###
-![Front page sample made with Centric child theme (HTML5) and a prebuilt layout by Page builder](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder-for-genesis/develop/assets/screenshot-3.png)
+![Front page sample made with Centric child theme (HTML5) and a prebuilt layout by Page builder](https://raw.githubusercontent.com/black-studio/black-studio-homepage-builder/develop/assets/screenshot-3.png)
 
 
 ## Frequently Asked Questions ##
