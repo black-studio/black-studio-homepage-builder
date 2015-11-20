@@ -101,7 +101,7 @@ class Black_Studio_Homepage_Builder {
 		load_plugin_textdomain(
 			$this->plugin_name,
 			false,
-			dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
 	}
 
