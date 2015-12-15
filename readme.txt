@@ -4,7 +4,7 @@ Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepag
 Tags: genesis, home, homepage, home page, front page, front page, siteorigin, page builder, responsive
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -71,6 +71,9 @@ This section describes how to install and use the plugin.
 No FAQ at this time. Please post your questions and issues to our [support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder).
 
 == Changelog ==
+
+= 1.0.1 (2015-12-15) =
+* Added support for child theme with custom home genesis_loop replacement
 
 = 1.0.0 (2015-11-21) =
 * First release

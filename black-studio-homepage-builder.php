@@ -9,7 +9,7 @@
  * Plugin Name:       Black Studio Homepage Builder for Genesis
  * Plugin URI:        https://wordpress.org/plugins/black-studio-homepage-builder/
  * Description:       Customize the home page of Genesis framework child themes using Page Builder.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Black Studio
  * Author URI:        http://www.blackstudio.it
  * License:           GPLv3

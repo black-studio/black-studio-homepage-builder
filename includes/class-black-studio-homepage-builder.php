@@ -58,7 +58,7 @@ class Black_Studio_Homepage_Builder {
 	public function __construct() {
 
 		$this->plugin_name = 'black-studio-homepage-builder';
-		$this->version = '1.0.0';
+		$this->version = '1.0.1';
 		
 		if ( is_admin() ) {
 			add_action( 'admin_init', array( $this, 'save_options' ) );
@@ -211,7 +211,7 @@ class Black_Studio_Homepage_Builder {
 	 */
 	public function replace_loop() {
 		if ( is_front_page() ) {
-			remove_action( 'genesis_loop', 'genesis_do_loop' );
+			remove_all_actions( 'genesis_loop' );
 			add_action( 'genesis_loop', array( $this, 'render_home' ) );
 		}
 	}
