@@ -5,56 +5,78 @@ msgstr ""
 "Project-Id-Version: Black Studio Homepage Builder for Genesis\n"
 "Report-Msgid-Bugs-To: https://github.com/black-studio/black-studio-homepage-"
 "builder/issues\n"
-"POT-Creation-Date: 2015-11-20 01:37:37+00:00\n"
+"POT-Creation-Date: 2017-11-06 09:24+0100\n"
+"PO-Revision-Date: 2017-11-06 09:26+0100\n"
+"Last-Translator: Marco <marco@blackstudio.it>\n"
+"Language-Team: Black Studio <info@blackstudio.it>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-11-20 03:00+0100\n"
-"Last-Translator: Marco <marco@blackstudio.it>\n"
-"Language-Team: Black Studio <info@blackstudio.it>\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 1.8.7\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
-"Language: Italiano\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: includes/class-black-studio-homepage-builder.php:86
+#: tmp/black-studio-homepage-builder/tags/1.0.0/includes/class-black-studio-homepage-builder.php:86
+#: tmp/black-studio-homepage-builder/tags/1.0.1/includes/class-black-studio-homepage-builder.php:86
+#: tmp/black-studio-homepage-builder/trunk/includes/class-black-studio-homepage-builder.php:86
 msgid ""
 "Sorry, to activate the Black Studio Homepage Builder plugin you should have "
 "installed a <a target=\"_blank\" href=\"%s\">Genesis</a> theme"
 msgstr ""
-"Spiacenti, per poter attivare il plugin Black Studio Homepage Builder devi "
-"aver installato un tema <a target=\"_blank\" href=\"%s\">Genesis</a>"
+"Per attivare il plugin Black Studio Homepage Builder devi aver installato un "
+"tema <a target=\"_blank\" href=\"%s\">Genesis</a>"
 
 #: includes/class-black-studio-homepage-builder.php:91
+#: tmp/black-studio-homepage-builder/tags/1.0.0/includes/class-black-studio-homepage-builder.php:91
+#: tmp/black-studio-homepage-builder/tags/1.0.1/includes/class-black-studio-homepage-builder.php:91
+#: tmp/black-studio-homepage-builder/trunk/includes/class-black-studio-homepage-builder.php:91
 msgid ""
 "Sorry, to activate the Black Studio Homepage Builder plugin you should have "
 "installed the <a target=\"_blank\" href=\"%s\">Page Builder by SiteOrigin</"
 "a> plugin"
 msgstr ""
-"Spiacenti, per poter attivare il plugin Black Studio Homepage Builder devi "
-"aver installato il plugin <a target=\"_blank\" href=\"%s\">Page Builder by "
-"SiteOrigin</a>"
+"Per attivare il plugin Black Studio Homepage Builder devi aver installato il "
+"plugin <a target=\"_blank\" href=\"%s\">Page Builder by SiteOrigin</a>"
 
 #: includes/class-black-studio-homepage-builder.php:131
+#: tmp/black-studio-homepage-builder/tags/1.0.0/includes/class-black-studio-homepage-builder.php:131
+#: tmp/black-studio-homepage-builder/tags/1.0.1/includes/class-black-studio-homepage-builder.php:131
+#: tmp/black-studio-homepage-builder/trunk/includes/class-black-studio-homepage-builder.php:131
 msgid "Genesis styles adjustments"
 msgstr "Correzioni stili Genesis"
 
 #: partials/admin-settings.php:15
+#: tmp/black-studio-homepage-builder/tags/1.0.0/partials/admin-settings.php:15
+#: tmp/black-studio-homepage-builder/tags/1.0.1/partials/admin-settings.php:15
+#: tmp/black-studio-homepage-builder/trunk/partials/admin-settings.php:15
 msgid "Reset main content padding"
 msgstr "Azzera padding contenuto del principale"
 
 #: partials/admin-settings.php:20
+#: tmp/black-studio-homepage-builder/tags/1.0.0/partials/admin-settings.php:20
+#: tmp/black-studio-homepage-builder/tags/1.0.1/partials/admin-settings.php:20
+#: tmp/black-studio-homepage-builder/trunk/partials/admin-settings.php:20
 msgid "Reset overflow hidden in structural elements"
 msgstr "Azzera overflow hidden degli elementi strutturali"
 
 #. Description of the plugin/theme
 msgid ""
-"Customize the home page of Genesis framework child themes using Page Builder."
+"Customize the home page of Genesis framework child themes using Page Builder "
+"by SiteOrigin."
 msgstr ""
-"Personalizza la home page dei temi basati sul Genesis framework utilizzando "
-"Page Builder."
+"Personalizza la home page dei temi basati su Genesis framework utilizzando "
+"Page Builder by SiteOrigin."
+
+#~ msgid ""
+#~ "Customize the home page of Genesis framework child themes using Page "
+#~ "Builder."
+#~ msgstr ""
+#~ "Personalizza la home page dei temi basati sul Genesis framework "
+#~ "utilizzando Page Builder."
