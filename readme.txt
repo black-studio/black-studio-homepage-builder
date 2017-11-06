@@ -1,14 +1,14 @@
 === Black Studio Homepage Builder for Genesis ===
 Contributors: black-studio, marcochiesi, thedarkmist
-Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/ 
+Donate link: https://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/ 
 Tags: genesis, home, homepage, home page, front page, front page, siteorigin, page builder, responsive
 Requires at least: 4.0
-Tested up to: 4.4
+Tested up to: 4.9
 Stable tag: 1.0.1
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+License URI: https://www.gnu.org/licenses/gpl-3.0.txt
 
-Customize the home page of Genesis framework child themes using Page Builder.
+Customize the home page of Genesis framework child themes using Page Builder by SiteOrigin.
 
 == Description ==
 
@@ -28,7 +28,7 @@ In particular this plugin does the following:
 
 = Requirements =
 
-* A child theme based on the [Genesis framework by StudioPress](http://www.studiopress.com/)
+* A child theme based on the [Genesis framework by StudioPress](https://www.studiopress.com/)
 * [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/) plugin
 
 = Recommended additional plugins to use with this one =
@@ -39,7 +39,7 @@ In particular this plugin does the following:
 
 = Links =
 
-* [Black Studio web site](http://www.blackstudio.it/en/)
+* [Black Studio web site](https://www.blackstudio.it/en/)
 * [FAQ](https://wordpress.org/plugins/black-studio-homepage-builder/faq/)
 * [Support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder)
 * Follow us on [Twitter](https://twitter.com/blackstudioita), [Facebook](https://www.facebook.com/blackstudiocomunicazione), [LinkedIn](https://www.linkedin.com/company/black-studio) and [GitHub](https://github.com/black-studio)
@@ -47,7 +47,7 @@ In particular this plugin does the following:
 = Get involved =
 
 * Developers can contribute to the source code on our [GitHub repository](https://github.com/black-studio/black-studio-homepage-builder).
-* Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/black-studio-homepage-builder#postform) or making a [donation](http://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/).
+* Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/black-studio-homepage-builder#postform) or making a [donation](https://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/).
 
 == Installation ==
 
@@ -73,7 +73,7 @@ No FAQ at this time. Please post your questions and issues to our [support forum
 == Changelog ==
 
 = 1.0.1 (2015-12-15) =
-* Added support for child theme with custom home genesis_loop replacement
+* Added support for child theme with custom home `genesis_loop` replacement
 
 = 1.0.0 (2015-11-21) =
 * First release
