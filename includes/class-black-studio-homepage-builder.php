@@ -58,7 +58,7 @@ class Black_Studio_Homepage_Builder {
 	public function __construct() {
 
 		$this->plugin_name = 'black-studio-homepage-builder';
-		$this->version = '1.0.2';
+		$this->version = '1.0.3';
 		
 		if ( is_admin() ) {
 			add_action( 'admin_init', array( $this, 'save_options' ) );

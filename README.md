@@ -1,10 +1,10 @@
 # Black Studio Homepage Builder for Genesis #
-**Contributors:** black-studio, marcochiesi, thedarkmist  
+**Contributors:** [black-studio](https://profiles.wordpress.org/black-studio/), [marcochiesi](https://profiles.wordpress.org/marcochiesi/), [thedarkmist](https://profiles.wordpress.org/thedarkmist/)  
 **Donate link:** https://www.blackstudio.it/en/wordpress-plugins/black-studio-homepage-builder/   
 **Tags:** genesis, home, homepage, home page, front page, front page, siteorigin, page builder, responsive  
 **Requires at least:** 4.0  
-**Tested up to:** 4.9  
-**Stable tag:** 1.0.2  
+**Tested up to:** 6.0  
+**Stable tag:** 1.0.3  
 **License:** GPLv3  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.txt  
 
@@ -77,6 +77,9 @@ This section describes how to install and use the plugin.
 No FAQ at this time. Please post your questions and issues to our [support forum](https://wordpress.org/support/plugin/black-studio-homepage-builder).
 
 ## Changelog ##
+
+### 1.0.3 (2022-07-01) ###
+* Maintenance release
 
 ### 1.0.2 (2017-11-06) ###
 * Maintenance release to avoid the plugin marked as not up to date
